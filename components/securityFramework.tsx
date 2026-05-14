@@ -47,7 +47,7 @@ const securityCards: SecurityCard[] = [
         title: "Data Retention Policy",
         description:
           "Defines secure storage and deletion timelines.",
-        icon: "/assets/security/Datarentention.svg",
+        icon: "/assets/security/Dataretention.svg",
       },
       {
         id: 5,
@@ -228,9 +228,9 @@ export default function SecurityFrameworkSection() {
           >
             
             {/* HEADING */}
-            <div className="absolute -top-4.5 left-5 bg-[#F6F6F6] px-3">
+            <div className="absolute -top-4.5 left-5 bg-[#F6F6F6] px-3 w-60 h-12 border-2 border-[#006E81] pb-6 rounded-lg">
               <h2
-                className={`text-[30px] font-bold leading-tight ${
+                className={`text-[14px] font-bold leading-wide mb-8 ${
                   card.highlighted
                     ? "text-[#006D77]"
                     : "text-[#006D77]"
@@ -241,7 +241,7 @@ export default function SecurityFrameworkSection() {
             </div>
 
             {/* ITEMS */}
-            <div className="mt-4 space-y-7">
+            <div className="mt-4 space-y-7 space-x-18">
               {card.items.map((item) => (
                 <div key={item.id} className="flex gap-4">
                   

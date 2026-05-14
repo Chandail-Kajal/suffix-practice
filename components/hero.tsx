@@ -58,11 +58,10 @@ export default function Hero() {
       {banners.map((banner, index) => (
         <div
           key={banner.id}
-          className={`relative transition-opacity duration-500 ${
-            activeSlide === index
-              ? "opacity-100 block"
-              : "opacity-0 hidden"
-          }`}
+          className={`relative transition-opacity duration-500 ${activeSlide === index
+            ? "opacity-100 "
+            : "opacity-0 hidden"
+            }`}
         >
           {/* Background Image */}
           <img
@@ -76,18 +75,21 @@ export default function Hero() {
             <div className="w-[28%] h-full bg-[#007385]/72" />
           </div>
 
+
           {/* Content */}
-          <div className="absolute inset-0 z-20 flex items-center">
-            <div className="w-full max-w-480 mx-auto px-6 xl:px-0">
+          <div className="absolute inset-0 z-20">
+            <div className="w-full max-w-480 mx-auto px-6 xl:px-0 h-full">
+
               {/* Text Container */}
-              <div className="max-w-190 ml-27.5 -mt-5">
+              <div className="max-w-160 ml-20 pt-28">
+
                 {/* Heading */}
-                <h1 className="text-white font-bold text-[50px] leading-[1.05] tracking-[-2px] whitespace-pre-line mt-0">
+                <h1 className="text-white font-bold text-[50px] leading-[1.05] tracking-[-2px] whitespace-pre-line">
                   {banner.title}
                 </h1>
 
                 {/* Description */}
-                <p className="mt-10 max-w-190 text-white text-[26px] leading-[1.9] font-normal">
+                <p className="mt-8 max-w-150 text-white text-[26px] leading-[1.8] font-normal">
                   {banner.description}
                 </p>
               </div>
@@ -130,11 +132,10 @@ export default function Hero() {
           <button
             key={index}
             onClick={() => setActiveSlide(index)}
-            className={`h-2.5 rounded-full ${
-              activeSlide === index
-                ? "w-11 bg-white"
-                : "w-11 border border-white bg-transparent"
-            }`}
+            className={`h-2.5 rounded-full ${activeSlide === index
+              ? "w-11 bg-white"
+              : "w-11 border border-white bg-transparent"
+              }`}
           />
         ))}
       </div>
