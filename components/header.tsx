@@ -43,7 +43,7 @@ export default function Header() {
     <header className="w-full font-opensans">
       {/* Top Header */}
       <div className="w-full bg-linear-to-r from-[#5AA9C7] to-[#4AC8BE]">
-        <div className="max-w-420 mx-auto h-14 px-6 xl:px-24 flex items-center justify-end">
+        <div className="w-420 mx-auto h-14 px-6 flex items-center justify-end">
           <div className="flex items-center gap-10 text-white text-[14px] font-normal">
             {/* Links */}
             <Link
@@ -106,7 +106,7 @@ export default function Header() {
 
       {/* Main Navbar */}
       <div className="w-full bg-[#006F81]">
-        <div className="max-w-420 mx-auto h-23.75 px-6 xl:px-24 flex items-center justify-between">
+        <div className="w-420 mx-auto h-23.75 px-2 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="shrink-0">
             <img

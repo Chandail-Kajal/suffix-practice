@@ -21,7 +21,7 @@ measurable business growth.`,
 }: ExpertiseProps) {
   return (
     <section
-      className={`relative overflow-hidden w-full h-[420px] sm:h-[500px] lg:h-[560px] ${className}`}
+      className={`relative overflow-hidden w-full h-105 sm:h-125 lg:h-140 ${className}`}
     >
       {/* Background Image */}
       <div
@@ -53,12 +53,12 @@ measurable business growth.`,
 
       {/* Content */}
       <div className="relative z-10 flex items-center h-full">
-        <div className="max-w-[720px] px-6 sm:px-12 lg:px-24">
+        <div className="max-w-180 px-6 sm:px-12 lg:px-24">
           <h2 className="text-white font-bold leading-tight tracking-tight text-[42px] sm:text-[58px] lg:text-[72px]">
             {title}
           </h2>
 
-          <p className="mt-6 text-white/95 leading-relaxed text-lg sm:text-2xl max-w-[760px]">
+          <p className="mt-6 text-white/95 leading-relaxed text-lg sm:text-2xl max-w-190">
             {description}
           </p>
         </div>

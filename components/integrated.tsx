@@ -16,7 +16,7 @@ export default function IntegratedSection({
     <section className="relative w-full overflow-hidden">
       
       {/* BACKGROUND IMAGE */}
-      <div className="relative h-125 w-full">
+      <div className="relative h-12p5 w-full">
         <img
           src={image}
           alt="Integrated Solutions"

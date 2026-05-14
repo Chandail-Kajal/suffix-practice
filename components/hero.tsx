@@ -78,7 +78,7 @@ export default function Hero() {
 
           {/* Content */}
           <div className="absolute inset-0 z-20">
-            <div className="w-full max-w-480 mx-auto px-6 xl:px-0 h-full">
+            <div className="w-full max-w-480 mx-auto px-6  h-full">
 
               {/* Text Container */}
               <div className="max-w-160 ml-20 pt-28">

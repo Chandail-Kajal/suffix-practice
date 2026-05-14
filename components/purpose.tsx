@@ -35,55 +35,75 @@ const services: ServiceCard[] = [
 export default function PurposeSection() {
   return (
     <section className="w-full bg-[#F7F7F7] py-20">
-      
+
       {/* MAIN CONTAINER */}
-      <div className="mx-auto grid max-w-350 gap-28 px-5 lg:grid-cols-[42%_58%]">
-        
-        {/* LEFT SIDE FIXED */} 
+      <div className=" grid max-w-350 gap-48 m-4 px-5 grid-cols-[42%_58%]">
+
+
+        {/* LEFT SIDE */}
         <div className="sticky top-20 h-fit self-start">
-          
-          {/* TOP LINE */}
-          <div className=" pb-4 h-15.25 w-70 bg-[#006D77] mr-30" >
 
-            <h2 className="text-[50px] font-extrabold uppercase leading-[0.9] tracking-[-2px] text-white">
-            PURPOSE
-          </h2>
+          {/* PURPOSE HEADING */}
+          <div className="relative z-10 inline-block">
 
+            {/* Teal Background Bar */}
+            <div className="absolute left-0 top-1/2 -translate-y-1/2 h-23 w-85 bg-[#006D77]" />
+
+
+            {/* Text */}
+            <h2 className="text-[96px] font-extrabold uppercase leading-none tracking-[-4px]">
+              <span className="text-white">PUR</span>
+              <span className="text-[#006D77]">POSE</span>
+            </h2>
           </div>
 
-      
-
           {/* SUB HEADING */}
-          <p className="mt-2 text-[23px] font-normal text-black">
+          <p className="mt-5 ml-28 text-3xl font-normal leading-normal text-black">
             Built Solutions for the BFSI Sector
           </p>
 
           {/* CONTENT */}
-          <div className="mt-8 space-y-5 text-[18px] leading-loose text-black">
+          <div className="mt-12 ml-28 max-w-190 space-y-10 text-lg leading-normal text-black">
+
             <p>
-             At Suffix Process Solutions Pvt. Ltd., we empower Banking, Financial Services, and Insurance (BFSI) institutions to thrive in a 
-             rapidly evolving, Phygital landscape by delivering intelligent, secure, and comprehensive process solutions. Our unique strength lies
-              in seamlessly integrating manpower-driven services, cutting-edge automation tools, and Robotic Process Automation (RPA)—providing both tech and non-tech solutions under one unified roof.
+              At Suffix Process Solutions Pvt. Ltd., we empower Banking,
+              Financial Services, and Insurance (BFSI) institutions to thrive in
+              a rapidly evolving, Phygital landscape by delivering intelligent,
+              secure, and comprehensive process solutions. Our unique strength
+              lies in seamlessly integrating manpower-driven services,
+              cutting-edge automation tools, and Robotic Process Automation
+              (RPA)—providing both tech and non-tech solutions under one unified
+              roof.
             </p>
 
             <p>
-             In a world increasingly defined by digital precision and human insight, we passionately believe in the synergy of technology’s accuracy with the nuanced wisdom of human expertise. 
-             Our philosophy of “Hi-tech. Hybrid. Human.” drives every solution we deliver, ensuring streamlined workflows, cost reduction, enhanced compliance, and superior service quality.
+              In a world increasingly defined by digital precision and human
+              insight, we passionately believe in the synergy of technology’s
+              accuracy with the nuanced wisdom of human expertise. Our philosophy
+              of “Hi-tech. Hybrid. Human.” drives every solution we deliver,
+              ensuring streamlined workflows, cost reduction, enhanced
+              compliance, and superior service quality.
             </p>
 
             <p>
-              Committed to the highest standards of data security and privacy, our services comply fully with ISO 27001:2022, ISO 27701:2019, and the Digital Personal Data Protection Act (DPDPA)—guaranteeing trust,
-              transparency, and accountability at all operational levels. “At Suffix, we commit to being your trusted partner—elevating excellence into extraordinary results, turning potential into tangible success, and shaping every effort into your unique hallmark.”
+              Committed to the highest standards of data security and privacy,
+              our services comply fully with ISO 27001:2022, ISO 27701:2019, and
+              the Digital Personal Data Protection Act (DPDPA)—guaranteeing
+              trust, transparency, and accountability at all operational levels.
+              “At Suffix, we commit to being your trusted partner—elevating
+              excellence into extraordinary results, turning potential into
+              tangible success, and shaping every effort into your unique
+              hallmark.”
             </p>
           </div>
         </div>
 
         {/* RIGHT SIDE */}
-        
+
         <div className="space-y-14">
           {services.map((service) => (
             <div key={service.id}>
-              
+
               {/* IMAGE */}
               <div className="overflow-hidden rounded-sm">
                 <img
@@ -95,9 +115,9 @@ export default function PurposeSection() {
 
               {/* TEXT */}
               <div className="pt-4">
-                
+
                 {/* TITLE */}
-                <h3 className="text-[24px] font-semibold leading-tight text-black">
+                <h3 className="text-sm font-semibold leading-tight text-black">
                   {service.title}
                 </h3>
 
