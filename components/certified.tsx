@@ -18,12 +18,9 @@ remains protected at every stage.`,
   className = "",
 }: CertifiedProps) {
   return (
-    <section
-      className={`w-full bg-[#f5f5f5] py-8 lg:py-12 ${className}`}
-    >
-      <div className="max-w-[1920px] mx-auto px-1 sm:px-4">
-        <div className="relative overflow-hidden min-h-[340px] sm:min-h-[420px] lg:min-h-[500px]">
-          {/* Background Image */}
+    <section className={`w-full bg-[#f5f5f5] ${className}`}>
+      <div className="">
+        <div className="relative overflow-hidden ">
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
@@ -51,13 +48,13 @@ remains protected at every stage.`,
           />
 
           {/* Content */}
-          <div className="relative z-10 flex items-center h-full min-h-[340px] sm:min-h-[420px] lg:min-h-[500px]">
-            <div className="max-w-[650px] px-6 sm:px-10 lg:px-20">
+          <div className="relative z-10 flex items-center h-full xl:py-36 xl:px-36 lg:px-30 px-8">
+            <div className="xl:w-[30%]">
               <h2 className="text-white text-[2rem] sm:text-[3rem] lg:text-[4.2rem] font-bold leading-[1.05] tracking-tight">
                 {title}
               </h2>
 
-              <p className="mt-5 text-white/95 text-base sm:text-lg lg:text-[1.45rem] leading-relaxed max-w-[580px]">
+              <p className="mt-5 text-white/95 text-base sm:text-lg lg:text-[1.45rem] leading-relaxed ">
                 {description}
               </p>
             </div>

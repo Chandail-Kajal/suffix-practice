@@ -14,9 +14,8 @@ export default function IntegratedSection({
 }: IntegratedSectionProps) {
   return (
     <section className="relative w-full overflow-hidden">
-      
       {/* BACKGROUND IMAGE */}
-      <div className="relative h-12p5 w-full">
+      <div className="relative w-full">
         <img
           src={image}
           alt="Integrated Solutions"
@@ -25,20 +24,14 @@ export default function IntegratedSection({
 
         {/* OVERLAY */}
         <div className="absolute inset-0 bg-linear-to-r from-[#006D77]/95 via-[#006D77]/70 to-transparent" />
-
-        {/* CONTENT */}
         <div className="absolute inset-0 flex items-center">
-          <div className="mx-auto w-full max-w-350 px-2">
-            
-            <div className="max-w-155">
-              
-              {/* HEADING */}
-              <h2 className="text-[42px] font-extrabold leading-[1.15] tracking-[-1px] text-white md:text-[58px]">
+          <div className="w-full max-w-350 xl:pl-36 font-inter">
+            <div className="max-w-150">
+              <h2 className="text-[42px] max-w-140 font-bold leading-[1.15] tracking-wide xl:text-5xl text-white md:text-[58px]">
                 {title}
               </h2>
 
-              {/* DESCRIPTION */}
-              <p className="mt-6 max-w-180 text-[18px] leading-[1.45] text-white/95 md:text-[22px]">
+              <p className="mt-6 max-w-180 font-thin text-[18px] leading-[1.45] text-white md:text-[22px]">
                 {description}
               </p>
             </div>

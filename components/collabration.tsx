@@ -53,21 +53,13 @@ const clientLogos: ClientLogo[] = [
 export default function CollaborationsSection() {
   return (
     <section className="w-full bg-[#F5F5F5]">
-      
-      {/* TOP SECTION */}
-      <div className="mx-auto max-w-375 px-2 pt-16 lg:px-10">
-        
-        {/* HEADING ROW */}
-        <div className="flex flex-wrap items-center gap-4">
-          
-          {/* TITLE BOX */}
-          <div className="flex h-23 items-center bg-[#006D77] px-10 lg:px-28">
-            <h2 className="text-[34px] font-bold tracking-[-1px] text-white lg:text-[42px]">
+      <div className="w-full py-8">
+        <div className="flex flex-wrap gap-4 mt-18">
+          <div className="flex items-center bg-[#006D77] px-10 xl:px-36 lg:px-28">
+            <h2 className="text-[34px] font-bold tracking-[-1px] text-white xl:text-4xl font-poppins lg:text-[42px]">
               Our Valued Collaborations
             </h2>
           </div>
-
-          {/* DESIGN BLOCK */}
           <img
             src="/assets/collabrators/leftimage.svg"
             alt="Design Pattern"
@@ -76,8 +68,8 @@ export default function CollaborationsSection() {
         </div>
 
         {/* DESCRIPTION */}
-        <div className="max-w-400 py-12">
-          <p className="text-[22px] leading-[1.55] text-[#1E1E1E]">
+        <div className="w-full py-12 px-36 font-open">
+          <p className="text-[22px] leading-[1.55] xl:text-2xl xl:leading-tight text-[#1E1E1E]">
             At Suffix Process Solutions, our unwavering commitment to excellence
             has earned the trust of some of the most respected names in the BFSI
             sector. We are proud to deliver cutting-edge process automation and
@@ -90,24 +82,19 @@ export default function CollaborationsSection() {
       </div>
 
       {/* BOTTOM SECTION */}
-      <div className="w-full bg-linear-to-r from-[#3E9CB3] to-[#D7E6EA] py-20">
-        <div className="mx-auto grid max-w-375 grid-cols-1 gap-16 px-6 lg:grid-cols-[40%_60%] lg:px-10">
-          
-          {/* LEFT CONTENT */}
+      <div className="w-full font-open bg-linear-to-r from-[#3E9CB3] to-[#D7E6EA] py-20">
+        <div className="mx-auto grid w-full xl:px-36 grid-cols-1 gap-16 px-6 lg:grid-cols-[40%_60%] lg:px-10">
           <div className="text-white">
-            
-            {/* SMALL TITLE */}
-            <p className="text-[20px] font-light uppercase tracking-wide">
+            <p className="text-[20px] font-light uppercase tracking-wide xl:text-xl">
               OUR CLIENTS
             </p>
 
-            {/* MAIN HEADING */}
-            <h3 className="mt-3 text-[48px] font-bold leading-[1.2] tracking-[-1px]">
+            <h3 className="mt-3 text-[48px] font-bold leading-[1.2] tracking-[-1px] xl:text-5xl xl:tracking-normal xl:leading-normal">
               Driving Success Through Trusted Partnerships
             </h3>
 
             {/* DESCRIPTION */}
-            <p className="mt-6 text-[20px] leading-[1.65] text-white/95">
+            <p className=" text-[20px] leading-[1.65] xl:leading-normal font-normal xl:text-xl text-white/95">
               At Suffix Process Solutions Pvt. Ltd., our clients are at the
               heart of everything we do. We take pride in collaborating with
               leading BFSI organizations, delivering tailored solutions that
@@ -119,10 +106,7 @@ export default function CollaborationsSection() {
           {/* RIGHT LOGOS */}
           <div className="grid grid-cols-6 gap-x-8 gap-y-2 md:grid-cols-3 lg:grid-cols-4">
             {clientLogos.map((client) => (
-              <div
-                key={client.id}
-                className="flex items-center justify-center"
-              >
+              <div key={client.id} className="flex items-center justify-center">
                 <img
                   src={client.logo}
                   alt={client.name}
