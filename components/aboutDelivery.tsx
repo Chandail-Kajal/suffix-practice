@@ -49,7 +49,7 @@ export default function AboutDelivery() {
         <div className="grid grid-cols-12 gap-x-14 gap-y-16 items-start">
           {/* Left Content */}
           <div className="col-span-12 lg:col-span-3">
-            <h2 className="text-white text-[45px] leading-[1.05] font-semibold tracking-[-1px] max-w-105">
+            <h2 className="text-white text-[45px] leading-[1.05] xl:text-4xl font-semibold tracking-normal max-w-105">
               Delivering for our clients at scale
             </h2>
 
@@ -61,7 +61,7 @@ export default function AboutDelivery() {
 
           {/* Right Features */}
           <div className="col-span-12 lg:col-span-9">
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-20 gap-y-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-20 gap-y-16">
               {deliveryItems.map((item) => (
                 <div
                   key={item.id}
@@ -77,7 +77,7 @@ export default function AboutDelivery() {
                   </div>
 
                   {/* Text */}
-                  <h3 className="text-white text-[20px] leading-[1.45] font-normal whitespace-pre-line">
+                  <h3 className="text-white text-[20px] xl:text-lg xl:font-thin leading-[1.45] font-normal whitespace-pre-line">
                     {item.title}
                   </h3>
                 </div>
