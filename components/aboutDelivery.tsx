@@ -44,8 +44,8 @@ const deliveryItems: DeliveryItem[] = [
 
 export default function AboutDelivery() {
   return (
-    <section className="w-full bg-[#006F81] overflow-hidden">
-      <div className="max-w-480 mx-auto px-27.5 py-17.5">
+    <section className="w-full bg-[#006F81] xl:px-36 overflow-hidden">
+      <div className="max-w-480 py-17.5">
         <div className="grid grid-cols-12 gap-x-14 gap-y-16 items-start">
           {/* Left Content */}
           <div className="col-span-12 lg:col-span-3">

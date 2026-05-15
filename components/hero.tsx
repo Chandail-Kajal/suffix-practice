@@ -41,55 +41,40 @@ export default function Hero() {
   const [activeSlide, setActiveSlide] = useState(0);
 
   const nextSlide = () => {
-    setActiveSlide((prev) =>
-      prev === banners.length - 1 ? 0 : prev + 1
-    );
+    setActiveSlide((prev) => (prev === banners.length - 1 ? 0 : prev + 1));
   };
 
   const prevSlide = () => {
-    setActiveSlide((prev) =>
-      prev === 0 ? banners.length - 1 : prev - 1
-    );
+    setActiveSlide((prev) => (prev === 0 ? banners.length - 1 : prev - 1));
   };
 
   return (
     <section className="relative w-full overflow-hidden">
-      {/* Slides */}
       {banners.map((banner, index) => (
         <div
           key={banner.id}
-          className={`relative transition-opacity duration-500 ${activeSlide === index
-            ? "opacity-100 "
-            : "opacity-0 hidden"
-            }`}
+          className={`relative transition-opacity duration-500 ${
+            activeSlide === index ? "opacity-100 " : "opacity-0 hidden"
+          }`}
         >
-          {/* Background Image */}
           <img
             src={banner.image}
             alt={banner.title}
             className="w-full h-auto object-cover"
           />
 
-          {/* LEFT OVERLAY ONLY */}
           <div className="absolute inset-0">
             <div className="w-[28%] h-full bg-[#007385]/72" />
           </div>
 
-
-          {/* Content */}
           <div className="absolute inset-0 z-20">
-            <div className="w-full max-w-480 mx-auto px-6  h-full">
-
-              {/* Text Container */}
-              <div className="max-w-160 ml-20 pt-28">
-
-                {/* Heading */}
-                <h1 className="text-white font-bold text-[50px] leading-[1.05] tracking-[-2px] whitespace-pre-line">
+            <div className="w-full max-w-480 mx-auto px-36 pt-36  h-full">
+              <div className="max-w-170">
+                <h1 className="text-white font-poppins font-semibold xl:text-[3rem] xl:leading-14 tracking-wide">
                   {banner.title}
                 </h1>
 
-                {/* Description */}
-                <p className="mt-8 max-w-150 text-white text-[26px] leading-[1.8] font-normal">
+                <p className="mt-8 max-w-150 text-white font-poppins xl:text-xl font-thin xl:leading-10">
                   {banner.description}
                 </p>
               </div>
@@ -98,17 +83,12 @@ export default function Hero() {
         </div>
       ))}
 
-      {/* Left Arrow */}
       <button
         onClick={prevSlide}
         className="absolute left-4 top-1/2 -translate-y-1/2 z-30"
       >
         <div className="w-17.5 h-17.5 rounded-full bg-black/40 flex items-center justify-center">
-          <ChevronLeft
-            size={42}
-            strokeWidth={2}
-            className="text-white"
-          />
+          <ChevronLeft size={42} strokeWidth={2} className="text-white" />
         </div>
       </button>
 
@@ -118,11 +98,7 @@ export default function Hero() {
         className="absolute right-4 top-1/2 -translate-y-1/2 z-30"
       >
         <div className="w-17.5 h-17.5 rounded-full bg-black/40 flex items-center justify-center">
-          <ChevronRight
-            size={42}
-            strokeWidth={2}
-            className="text-white"
-          />
+          <ChevronRight size={42} strokeWidth={2} className="text-white" />
         </div>
       </button>
 
@@ -132,10 +108,11 @@ export default function Hero() {
           <button
             key={index}
             onClick={() => setActiveSlide(index)}
-            className={`h-2.5 rounded-full ${activeSlide === index
-              ? "w-11 bg-white"
-              : "w-11 border border-white bg-transparent"
-              }`}
+            className={`h-2.5 rounded-full ${
+              activeSlide === index
+                ? "w-11 bg-white"
+                : "w-11 border border-white bg-transparent"
+            }`}
           />
         ))}
       </div>
