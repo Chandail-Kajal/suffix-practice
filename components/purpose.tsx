@@ -35,36 +35,20 @@ const services: ServiceCard[] = [
 export default function PurposeSection() {
   return (
     <section className="w-full bg-[#F7F7F7] py-20">
-
-      {/* MAIN CONTAINER */}
-      <div className=" grid max-w-350 gap-48 m-4 px-5 grid-cols-[42%_58%]">
-
-
-        {/* LEFT SIDE */}
-        <div className="sticky top-20 h-fit self-start">
-
-          {/* PURPOSE HEADING */}
+      <div className="flex justify-between xl:gap-48 items-center">
+        <div className="sticky w-[50%]  top-20 h-fit self-start">
           <div className="relative z-10 inline-block">
-
-            {/* Teal Background Bar */}
-            <div className="absolute left-0 top-1/2 -translate-y-1/2 h-23 w-85 bg-[#006D77]" />
-
-
-            {/* Text */}
-            <h2 className="text-[96px] font-extrabold uppercase leading-none tracking-[-4px]">
-              <span className="text-white">PUR</span>
+            <h2 className="text-[96px] font-bold uppercase leading-none tracking-[-4px] font-poppins">
+              <span className="text-white xl:pr-1 rounded-r-md xl:pl-36 bg-[#006D77]">PUR</span>
               <span className="text-[#006D77]">POSE</span>
             </h2>
           </div>
 
-          {/* SUB HEADING */}
-          <p className="mt-5 ml-28 text-3xl font-normal leading-normal text-black">
+          <p className="mt-5 xl:pl-36 text-3xl font-normal leading-normal text-black font-poppins">
             Built Solutions for the BFSI Sector
           </p>
 
-          {/* CONTENT */}
-          <div className="mt-12 ml-28 max-w-190 space-y-10 text-lg leading-normal text-black">
-
+          <div className="mt-12 xl:pl-36 space-y-10 xl:text-xl xl:font-normal leading-tight font-open text-black">
             <p>
               At Suffix Process Solutions Pvt. Ltd., we empower Banking,
               Financial Services, and Insurance (BFSI) institutions to thrive in
@@ -79,9 +63,9 @@ export default function PurposeSection() {
             <p>
               In a world increasingly defined by digital precision and human
               insight, we passionately believe in the synergy of technology’s
-              accuracy with the nuanced wisdom of human expertise. Our philosophy
-              of “Hi-tech. Hybrid. Human.” drives every solution we deliver,
-              ensuring streamlined workflows, cost reduction, enhanced
+              accuracy with the nuanced wisdom of human expertise. Our
+              philosophy of “Hi-tech. Hybrid. Human.” drives every solution we
+              deliver, ensuring streamlined workflows, cost reduction, enhanced
               compliance, and superior service quality.
             </p>
 
@@ -100,38 +84,35 @@ export default function PurposeSection() {
 
         {/* RIGHT SIDE */}
 
-        <div className="space-y-14">
+        <div className="space-y-14 xl:pr-36 xl:max-w-220">
           {services.map((service) => (
             <div key={service.id}>
-
               {/* IMAGE */}
               <div className="overflow-hidden rounded-sm">
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="h-105 w-full object-cover"
+                  className="h-105 xl:h-80 w-full object-cover rounded-lg"
                 />
               </div>
 
               {/* TEXT */}
-              <div className="pt-4">
-
+              <div className="pt-4 font-poppins">
                 {/* TITLE */}
-                <h3 className="text-sm font-semibold leading-tight text-black">
+                <h3 className="text-sm xl:text-3xl f font-semibold leading-tight text-black">
                   {service.title}
                 </h3>
 
                 {/* DESCRIPTION */}
-                <p className="mt-2 text-[13px] leading-[1.7] text-black">
+                <p className="mt-2 text-[13px] xl:text-lg xl:leading-normal leading-[1.7] text-black">
                   {service.description}
                 </p>
 
                 {/* BUTTON */}
-                <button className="mt-4 flex items-center gap-2 text-[12px] font-medium text-[#0088B2]">
-                  <span className="flex h-4 w-4 items-center justify-center rounded-full border border-[#0088B2] text-[10px] leading-none">
+                <button className="mt-4 flex items-center gap-2 text-[12px] xl:text-lg font-medium text-[#0088B2] font-open">
+                  <span className="flex xl:h-8 xl:text-lg aspect-square items-center justify-center rounded-full border-2 border-[#0088B2] text-[10px] leading-none">
                     +
                   </span>
-
                   Learn more
                 </button>
               </div>
