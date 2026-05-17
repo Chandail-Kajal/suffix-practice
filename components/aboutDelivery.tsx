@@ -44,40 +44,38 @@ const deliveryItems: DeliveryItem[] = [
 
 export default function AboutDelivery() {
   return (
-    <section className="w-full bg-[#006F81] xl:px-36 overflow-hidden">
-      <div className="max-w-480 py-17.5">
-        <div className="grid grid-cols-12 gap-x-14 gap-y-16 items-start">
+    <section className="w-full bg-[#006F81] px-6 py-12 md:py-0 md:pl-26 xl:pl-36 overflow-hidden">
+      <div className="max-w-480 py-0 md:py-10 lg:py-17.5">
+        <div className="flex flex-col gap-10 md:flex-row">
           {/* Left Content */}
-          <div className="col-span-12 lg:col-span-3">
-            <h2 className="text-white text-[45px] leading-[1.05] xl:text-4xl font-semibold tracking-normal max-w-105">
+          <div className="flex flex-col gap-4 xl:w-[18%] md:w-[21%] xl:gap-4 md:gap-2">
+            <h2 className="text-white text-3xl leading-tight font-semibold tracking-normal max-w-full font-poppins md:text-2xl xl:text-4xl xl:font-semibold xl:max-w-105">
               Delivering for our clients at scale
             </h2>
 
-            <p className="mt-8 text-white text-[18px] leading-[1.45] font-thin max-w-105">
+            <p className="text-white text-sm leading-7 md:leading-tight font-thin md:text-xs xl:text-base xl:tracking-tight xl:leading-tight">
               We deliver consistent, high-quality solutions tailored to our
               clients’ needs—at any scale.
             </p>
           </div>
 
           {/* Right Features */}
-          <div className="col-span-12 lg:col-span-9">
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-20 gap-y-16">
+          <div className="flex-1 font-poppins md:ml-10 xl:ml-30">
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-y-6 xl:grid-cols-[auto_auto_auto] xl:gap-y-10 xl:mr-10">
               {deliveryItems.map((item) => (
                 <div
                   key={item.id}
-                  className="flex items-start gap-7"
+                  className="flex items-center gap-5 md:gap-6 xl:gap-10"
                 >
-                  {/* Icon */}
-                  <div className="shrink-0 pt-1">
+                  <div>
                     <img
                       src={item.icon}
                       alt={item.title}
-                      className="w-19.5 h-19.5 object-contain"
+                      className="aspect-square h-14 object-contain md:h-12 lg:h-14 xl:h-19"
                     />
                   </div>
 
-                  {/* Text */}
-                  <h3 className="text-white text-[20px] xl:text-lg xl:font-thin leading-[1.45] font-normal whitespace-pre-line">
+                  <h3 className="text-white text-sm leading-6 font-normal whitespace-pre-line md:text-xs md:font-thin xl:text-md">
                     {item.title}
                   </h3>
                 </div>
